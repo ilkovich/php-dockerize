@@ -5,11 +5,9 @@ front:
     - "9000:9000"
   links:
     - mysql:mysql
-    - redis:redis
   volumes:
     - ./www:/var/www
     - ./sites:/etc/nginx/sites-enabled
-
 mysql:
   image: tutum/mysql
   ports:
